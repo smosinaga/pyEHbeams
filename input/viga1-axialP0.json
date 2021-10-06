@@ -1,0 +1,76 @@
+{
+    "device": "AxialPreBuckledBeam3Spring",
+    
+    "formulation": "NonLinearAxialForce",
+    
+    "expSample": ["viga1-p0"],
+
+    "setup": {
+        "solve_disp": "n",
+        "solve_volt": "y",
+        
+        "solve_MMS": "y",
+        "solve_Num": "n",
+        "solve_Exp": "y"
+        },
+        
+    "acelValues": [0.2, 0.5, 1],
+
+    "solRanges": {
+        "fiMSM": 187, 
+        "ffMSM": 237, 
+        "minMSM": 1E-7,
+        "maxMSM": 1E-2,
+        "nMSM": 3E5,
+
+        "fi1": 182, 
+        "ff1": 222, 
+        "n1": 100, 
+
+        "fi2": 150, 
+        "ff2": 250, 
+        "n2": 0, 
+
+        "fi3":130, 
+        "ff3":250, 
+        "n3": 0
+            },
+            
+    "modesConf": {
+           "wi": 1,
+           "wf": 1500,
+           "sampleNum": 1000, 
+           "modeResolution": 1000,
+           
+           "plot_MatFreq": "n",
+           "plot_Modes": "y"
+           },
+       
+   "pars": {
+            "Rl": 211E3,
+            "vib_pos": 55E-3,
+    
+            "hs": 0.495E-3,
+            "bs": 19.8E-3,
+            "L1": 81.5E-3,
+            "L3": 2.9E-3,
+            "rhos": 8100,
+            "Es": 230E9,
+    
+            "c1": 1.185,
+            "c2": 13.81144113,
+    
+            "hp": 0.3E-3,
+            "bp": 14E-3,
+            "rhop": 5440,
+            "L2": 28E-3,
+            "Ep": 60.336E9,
+            "d31": 170E-12,
+            "Cp": 36E-9,
+            "e311": 9.4553E3,
+            "c111p": -2.685E13,
+            
+            "P": 16.5,
+            "k": 5.5E5
+            }
+}
